@@ -11,9 +11,9 @@ if (words === ""){
 words = words.split(" ");
 console.log(words)
 
-words.forEach(element => {
+words.forEach(element, index => {
     let li = document.createElement('li');
-    li.innerText = element;
+    li.innerText = element + " est le mot qui est a l'index " + index + " du tableau de mots" ;
     ul.appendChild(li)
     li.classList.add("list-group-item")
 });
